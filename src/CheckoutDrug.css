@@ -1,0 +1,28 @@
+.checkoutDrug {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checkoutDrug__info {
+    padding-left: 20px;
+}
+
+.checkoutDrug__onfo > button {
+    background: #f0c14b;
+    border: 1px solid;
+    margin-top: 18px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+}
+
+.checkoutDrug__image {
+    object-fit: contain;
+    width: 100px;
+    height: 100px;
+}
+
+.checkoutDrug__title {
+    font-size: 17px;
+    font-weight: 800;
+}
