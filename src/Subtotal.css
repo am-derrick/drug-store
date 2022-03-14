@@ -10,15 +10,6 @@
     border-radius: 3px;
 }
 
-.subtotal__gift {
-    display: flex;
-    align-items: center;
-}
-
-.subtotal__gift > input {
-    margin-right: 5px;
-}
-
 .subtotal > button {
     background: #f0c14b;
     border-radius: 2px;
