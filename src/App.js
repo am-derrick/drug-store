@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     // listener runs once when app launched
-    auth.onAuthStateChanged(authUser => {
+    auth.onAuthStateChanged((authUser) => {
       console.log('THE USER IS >>> ', authUser);
 
       if (authUser) {
