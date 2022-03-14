@@ -12,7 +12,7 @@ function Subtotal() {
         <CurrencyFormat
             renderText={(value) => (
                 <>
-                    <p>Subtotal ({cart.length}):</p>
+                    <p>Subtotal ({cart.length} items):</p>
                     <p><strong>{value}</strong></p>
                 </>
             )}
