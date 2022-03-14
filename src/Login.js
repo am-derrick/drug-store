@@ -58,11 +58,11 @@ function Login() {
         </form>
 
         <p>
-          By sigining in you agree to ZOE HEALTH SERVICES Terms and Conditions.  
+          By sigining in you agree to ZOE HEALTH SERVICES Terms and Conditions. Welcome to Zoe Drug Store, your trusted online store. 
         </p>
 
         <button onClick={register}
-        className='login__registerButton'>Create Account</button>  
+        className='login__registerButton'>Create your Account</button>  
       </div>
     </div>
   )
