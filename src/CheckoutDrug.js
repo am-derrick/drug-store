@@ -21,8 +21,8 @@ function CheckoutDrug({ id, image, title, price }) {
                 <small>$</small>
                 <strong>{price}</strong>
             </p>
+            <button onClick={removeFromCart}>Remove from Cart</button>
         </div>
-        <button onClick={removeFromCart}>Remove from Cart</button>
     </div>
   )
 }

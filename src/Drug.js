@@ -30,7 +30,7 @@ function Drug({ id, title, image, price}) {
         <img src={image} alt=''/>
         <button onClick={addToCart}>Add to Cart</button>
     </div>
-  )
+  );
 }
 
 export default Drug;
