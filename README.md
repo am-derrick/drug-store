@@ -17,7 +17,7 @@ It uses Stripe API to process its payment.
 To view the full functional web app on your browser, use the link [here](https://drug-store-9dcfb.web.app/).
 
 ## Files
--The src directory contains .js files for the web app that provide functionality, and their corresponding .css files for styling purposes.
+- The src directory contains .js files for the web app that provide functionality, and their corresponding .css files for styling purposes.
 - The public directory contains files with images, the favicon, html index file and logo. (Note: this project is still under work so files will be consequently updated.)
 
 
