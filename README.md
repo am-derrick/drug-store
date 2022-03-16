@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Zoe Drug Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![ZDS Logo with Bkgrnd](https://user-images.githubusercontent.com/65196859/158594785-fb4172a0-876f-429d-8610-32b5a3ec2eb9.png)
 
-## Available Scripts
+This project contains files for an online e-commerce drug store with full functionality,it is part of a software engineering project for demonstration purposes.
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+This project was developed using React Javascript.
+It uses Firebase that provides:
+- Hosting,
+- storage of the files including the images,
+- future implementation of databases,
+- secure authentication and log in.
+It uses Stripe API to process its payment.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To view the full functional web app on your browser, use the link [here](https://drug-store-9dcfb.web.app/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Files
+- The src directory contains .js files for the web app that provide functionality, and their corresponding .css files for styling purposes.
+- The public directory contains files with images, the favicon, html index file and logo. (Note: this project is still under work so files will be consequently updated.)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Authors
 
-### `npm run build`
+Derrick Ampire
+- [GitHub](https://github.com/am-derrick)
+- [LinkedIn](https://www.linkedin.com/in/ampire-derrick-1957b0185/)
+- [Twitter](https://www.twitter.com/am_derrick)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## To Run
+To run this app without using your web browser, simply fork and download the files on your local machine or server, then install react. User `npx create-react-app` to create the app, and install the react router dom with `npm install react-router-dom`. 
+Use `npm start` to view the files on your local host and `npm build` to deploy, assuming you've installed all the necessary dependencies. Refer to the [react router documentation](https://reactrouter.com/docs/en/v6/api) and [getting started with react](https://reactjs.org/docs/getting-started.html) for more details.
