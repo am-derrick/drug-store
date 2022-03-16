@@ -30,4 +30,4 @@ Derrick Ampire
 
 ## To Run
 To run this app without using your web browser, simply fork and download the files on your local machine or server, then install react. User `npx create-react-app` to create the app, and install the react router dom with `npm install react-router-dom`. 
-Use `npm start` to view the files on your local host and `npm build` to deploy, assuming you've installed all the necessary dependencies. Refer to the [react router documentation](https://reactrouter.com/docs/en/v6/api) and [gettind started with react](https://reactjs.org/docs/getting-started.html) for more details.
+Use `npm start` to view the files on your local host and `npm build` to deploy, assuming you've installed all the necessary dependencies. Refer to the [react router documentation](https://reactrouter.com/docs/en/v6/api) and [getting started with react](https://reactjs.org/docs/getting-started.html) for more details.
