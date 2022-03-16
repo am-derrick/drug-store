@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Zoe Drug Store
+
+![ZDS Logo with Bkgrnd](https://user-images.githubusercontent.com/65196859/158594517-ae6eb3d3-2b48-485b-bed4-5958281c503f.png)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
