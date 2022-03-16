@@ -3,7 +3,7 @@
 1. App.js contains the main app files, all files are compiled within this file.
 2. All files ending with a .css are styling files for the different files.
 3. All other main .js files are:
-- Checkout.js containing code for the checkout page.
+emsp - Checkout.js containing code for the checkout page.
 - CheckoutDrug.js containing code for the product section in the Checkout.js checkout page.
 - Drug.js contains files and code for the different medicines.
 - Header.js contains code for the header section of the Home page.
