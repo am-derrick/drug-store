@@ -13,7 +13,7 @@ function Home() {
             <div className='home__row'>
                 <Drug
                 id='1234'
-                 title='Asprin: reduce fever and relieve mild to moderate pain from conditions such as muscle aches, toothaches, common cold, and headaches, may also be used to reduce pain and swelling in conditions such as arthritis.'
+                 title='Asprin: reduce fever and relieve mild to moderate pain from conditions such as muscle aches, toothaches, common cold, and headaches.'
                 price={10.00}
                 image='https://firebasestorage.googleapis.com/v0/b/drug-store-9dcfb.appspot.com/o/Aspirin.jpg?alt=media&token=45d44590-a26b-4c44-8ffe-e971398acc46' alt=''
                 />
@@ -25,7 +25,7 @@ function Home() {
                 />
                 <Drug 
                 id='1241'
-                title='Metoprolol: changes the way your body responds to some nerve impulses, especially in the heart and slows down your heart rate making it easier for your heart to pump blood around your body.'
+                title='Metoprolol: changes the way your body responds to some nerve impulses, especially in the heart and slows down your heart rate.'
                 price={53.25}
                 image='https://firebasestorage.googleapis.com/v0/b/drug-store-9dcfb.appspot.com/o/Metoprolol.jpg?alt=media&token=cd3427f7-805b-4d17-a0b3-bbfdd8bf4f58' alt=''
                 />
@@ -39,13 +39,13 @@ function Home() {
                 />
                 <Drug 
                 id='1237'
-                title='Insulin Lispro: replaces the insulin produced by the body by helping move sugar from the blood into other body tissues where it is used for energy, it stops the liver from producing more sugar .'
+                title='Insulin Lispro: replaces the insulin produced by the body by helping move sugar from the blood into other body tissues.'
                 price={83.45}
                 image='https://firebasestorage.googleapis.com/v0/b/drug-store-9dcfb.appspot.com/o/Insulin%20Lispro.jpg?alt=media&token=6ca8208f-4b20-4564-a513-1646eda4289e' alt=''
                 />
                 <Drug 
                 id='1238'
-                title='Amoxicillin: treats general bacterial infections, such as chest infections (including pneumonia) and dental abscesses, it can also treat stomach ulcers.'
+                title='Amoxicillin: treats general bacterial infections, such as chest infections (including pneumonia), dental abscesses and stomach ulcers.'
                 price={5.99}
                 image='https://firebasestorage.googleapis.com/v0/b/drug-store-9dcfb.appspot.com/o/Amoxicillin.jpg?alt=media&token=59db53b2-04f0-430d-b847-b2aa149c11fa' alt=''
                 />
@@ -65,7 +65,7 @@ function Home() {
                 />
                 <Drug 
                 id='1243'
-                title='Ibuprofen: changes the way your body responds to some nerve impulses, especially in the heart and slows down your heart rate making it easier for your heart to pump blood around your body.'
+                title='Ibuprofen: changes the way your body responds to some nerve impulses, especially in the heart and slows down your heart rate.'
                 price={14.99}
                 image='https://firebasestorage.googleapis.com/v0/b/drug-store-9dcfb.appspot.com/o/Ibuprofen-200mg-768x768.jpg?alt=media&token=4ef7598c-eaa5-47a3-a0fc-86062c60b6e8' alt=''
                 />
