@@ -1,6 +1,7 @@
 # Zoe Drug Store
 
-![ZDS Logo with Bkgrnd](https://user-images.githubusercontent.com/65196859/158594517-ae6eb3d3-2b48-485b-bed4-5958281c503f.png)
+![ZDS Logo with Bkgrnd](https://user-images.githubusercontent.com/65196859/158594785-fb4172a0-876f-429d-8610-32b5a3ec2eb9.png)
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
