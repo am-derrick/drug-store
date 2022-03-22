@@ -6,7 +6,7 @@
 This project contains files for an online e-commerce drug store with full functionality,it is part of a software engineering project for demonstration purposes.
 
 To view the full functional web app on your browser, use the link [here](https://drug-store-9dcfb.web.app/).
-You can also read the fullproject blog here.
+You can also read the full project blog on Medium [here](https://medium.com/@ampire90/how-i-built-zoe-drug-store-b568a6b34ac9).
 The author of this project is Derrick Ampire,
 - [GitHub](https://github.com/am-derrick)
 - [LinkedIn](https://www.linkedin.com/in/ampire-derrick-1957b0185/)
