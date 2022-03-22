@@ -3,14 +3,18 @@ import './Login.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { auth } from './firebase';
 
+// The Login page of the web app
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
+  // the sign in option for users with accounts
   const signIn = e => {
+    // prevents default action by the user
     e.preventDefault();
 
+    // handles authentication using firebase and navigates to home page
     auth
         .signInWithEmailAndPassword(email, password)
         .then((auth) => {
@@ -19,9 +23,12 @@ function Login() {
         .catch(error => alert(error.message))
   }
 
+  // the register option for first time users
   const register = e => {
+    // prevents default action
     e.preventDefault();
 
+    // handles authentication with firebase
     auth
         .createUserWithEmailAndPassword(email, password)
         .then((auth) => {

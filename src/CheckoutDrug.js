@@ -2,10 +2,12 @@ import React from 'react';
 import './CheckoutDrug.css';
 import { useStateValue } from './StateProvider';
 
+// the section containing items in cart on the Checkout page
 function CheckoutDrug({ id, image, title, price, hideButton }) {
     const [{ cart }, dispatch] = useStateValue();
 
     const removeFromCart = () => {
+        // handles the event that an item is removed from cart
         dispatch({
             type: 'REMOVE_FROM_CART',
             id: id, 

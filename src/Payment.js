@@ -1,14 +1,17 @@
-import React, { useState }from 'react';
+import React, { useEffect, useState }from 'react';
 import CheckoutDrug from './CheckoutDrug';
 import './Payment.css';
 import { useStateValue } from './StateProvider';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { cardElement, useStripe, useElements, CardElement } from '@stripe/react-stripe-js';
 import CurrencyFormat from 'react-currency-format';
 import { getCartTotal } from './reducer';
+import axios from './axios';
 
+// the payment page of th web app
 function Payment() {
     const [{ cart, user }, dispatch]= useStateValue();
+    const navigate = useNavigate();
 
     const stripe = useStripe();
     const elements = useElements();
@@ -17,9 +20,40 @@ function Payment() {
     const [processing, setProcessing] = useState('');
     const [error, setError] = useState(null);
     const [disabled, setDisabled] = useState(true);
+    const [clientSecret, setClientSecret] = useState(true);
 
-    const handleSubmit = e => {
+    useEffect(() => {
+        const getClientSecret = async () => {
+            const response = await axios({
+                method: 'post',
+                // multiply by 100 because Stripe accepts upto cents
+                url: `/payments/create?total=${getCartTotal(cart) * 100}`
+            })
+            setClientSecret(response.data.clientSecret)
+        }
+
+        getClientSecret();
+    }, [cart])
+
+    console.log('THE SECRET IS >>>', clientSecret)
+
+    const handleSubmit = async (event) => {
         // When a user submits using Stripe
+        event.preventDefault();
+        setProcessing(true);
+
+        const payload = await stripe.confirmCardPayment(clientSecret, {
+            payment_method: {
+                card: elements.getElement(CardElement)
+            }
+        }).then(({ paymentIntent }) => {
+            //paymentIntent is how stripe confirms payment
+            setSucceeded(true);
+            setError(null);
+            setProcessing(false);
+
+            navigate('../orders')
+        })
     }
 
     const handleChange = event => {
@@ -80,9 +114,10 @@ function Payment() {
                                 prefix={'$'}
                             />
                             <button disabled={processing || disabled || succeeded}>
-                                <span>{processing ? <p>Processing</p> : 'Buy Now'}</span>
+                                <span>{processing ? <p>Processing</p> : 'Complete Order'}</span>
                             </button>
                         </div>
+
                     </form>
                 </div>
             </div>

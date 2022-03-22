@@ -6,10 +6,14 @@ import { Link } from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 import { auth } from './firebase';
 
+/* the header of the web app's home and checkout page, it contains the
+logo, search bar, navigation option with login details, orders and cart
+*/
 function Header() {
     const [{ cart, user }, dispatch] = useStateValue();
 
     const handleAuthentication = () => {
+        // if already signed in, show sign out option
         if (user) {
             auth.signOut();
         }

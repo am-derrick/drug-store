@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import reducer, { initialState } from './reducer';
 import { StateProvider } from './StateProvider';
 
+// renders HTML elements to display HTML code
 ReactDOM.render(
   <React.StrictMode>
     <StateProvider initialState={initialState} reducer={reducer}>

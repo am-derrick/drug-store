@@ -5,8 +5,9 @@ import { useStateValue } from './StateProvider';
 import { getCartTotal } from './reducer';
 import { useNavigate } from 'react-router-dom';
 
+// computes the sub total when items are added to the cart
 function Subtotal() {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   const [{ cart }, dispatch] = useStateValue();
 
   return (
@@ -18,10 +19,10 @@ function Subtotal() {
                     <p><strong>{value}</strong></p>
                 </>
             )}
-            decimalScale={2}
+            decimalScale={2} // ensures 2 decimal places
             value={getCartTotal(cart)}
             displayType={'text'}
-            thousandSeparator={true}
+            thousandSeparator={true} // adds a comma after before the thousandthvalue
             prefix={'$'}
         />
 

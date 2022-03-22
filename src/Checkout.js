@@ -5,6 +5,7 @@ import Subtotal from './Subtotal';
 import CheckoutDrug from './CheckoutDrug';
 import userEvent from '@testing-library/user-event';
 
+// the Checkout page
 function Checkout() {
   const [{ cart, user}, dispatch] = useStateValue();
 
@@ -19,7 +20,8 @@ function Checkout() {
               <h3>Hello {user?.email}</h3>
               <h2 className='checkout__title'>Your Cart</h2>
 
-              {cart.map(item => (
+              {cart.map(item => ( 
+                // creates an array and populates it with items added to the cart
                 <CheckoutDrug
                   id={item.id}
                   title={item.title}

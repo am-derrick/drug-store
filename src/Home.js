@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import Drug from './Drug';
 
+// The Home Page with products, images and their info
 function Home() {
   return (
     <div className='home'>
@@ -13,7 +14,7 @@ function Home() {
             <div className='home__row'>
                 <Drug
                 id='1234'
-                 title='Asprin: reduce fever and relieve mild to moderate pain from conditions such as muscle aches, toothaches, common cold, and headaches.'
+                title='Asprin: reduce fever and relieve mild to moderate pain from conditions such as muscle aches, toothaches, common cold, and headaches.'
                 price={10.00}
                 image='https://firebasestorage.googleapis.com/v0/b/drug-store-9dcfb.appspot.com/o/Aspirin.jpg?alt=media&token=45d44590-a26b-4c44-8ffe-e971398acc46' alt=''
                 />

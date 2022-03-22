@@ -1,3 +1,6 @@
+/* contains the reducer function that is responsible for handling
+most functions within the data Layer
+*/
 export const initialState = {
     cart: [],
     user: null
@@ -10,18 +13,21 @@ const reducer = (state, action) => {
     console.log(action);
     switch (action.type) {
         case 'ADD_TO_CART':
+            // handles when item is added to cart
             return {
                 ...state,
                 cart: [...state.cart, action.item],
             };
 
         case 'EMPTY_CART':
+            // handles when the cart is empty
             return {
                 ...state,
                 cart: []
             }
 
         case 'REMOVE_FROM_CART':
+            //handles when item is removed from cart
             const index = state.cart.findIndex (
                 (cartItem) => cartItem.id === action.id
             );
@@ -42,12 +48,14 @@ const reducer = (state, action) => {
             }
 
         case 'SET_USER':
+            // handles when a new user is set
             return {
                 ...state,
                 user: action.user
             }
 
         default:
+            // default state
             return state;
     }
 };
