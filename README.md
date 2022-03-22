@@ -40,3 +40,4 @@ To contribute to the project;
 ## Related projects
 
 ## Licensing
+This project is licensed under the MIT License.
