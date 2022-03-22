@@ -12,7 +12,10 @@ The author of this project is Derrick Ampire,
 - [LinkedIn](https://www.linkedin.com/in/ampire-derrick-1957b0185/)
 - [Twitter](https://www.twitter.com/am_derrick)
 
+![Screenshot (159)](https://user-images.githubusercontent.com/65196859/159448935-8dfe142b-3fdc-4a88-8634-5f11c657f365.png)
+
 ## Installation
+
 To run this app without using your web browser, simply fork and download the files on your local machine or server, then install react. User `npx create-react-app` to create the app, and install the react router dom with `npm install react-router-dom`. 
 Use `npm start` to view the files on your local host and `npm run build` and `firebase deploy` to deploy, assuming you've installed all the necessary dependencies. Refer to the [react router documentation](https://reactrouter.com/docs/en/v6/api) and [getting started with react](https://reactjs.org/docs/getting-started.html) for more details.
 
