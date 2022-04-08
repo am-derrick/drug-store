@@ -8,6 +8,7 @@ import Login from "./Login";
 import { auth } from "./firebase";
 import { useStateValue } from "./StateProvider";
 import Payment from './Payment';
+import Orders from "./Orders";
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from "@stripe/stripe-js";
 
@@ -46,6 +47,7 @@ function App() {
     <Router>
       <div className="app">
         <Routes>
+        <Route path='/orders' element={[<Header/>,<Orders /> ]} />
           <Route path='/login' element={[<Login /> ]} />
           <Route path='/checkout' element={[<Header />,<Checkout />]} />
           <Route path='/payment' element={[<Header />,<Elements stripe={promise}><Payment /></Elements>]} />

@@ -7,6 +7,7 @@ import { cardElement, useStripe, useElements, CardElement } from '@stripe/react-
 import CurrencyFormat from 'react-currency-format';
 import { getCartTotal } from './reducer';
 import axios from './axios';
+import { db } from './firebase';
 
 // the payment page of th web app
 function Payment() {
@@ -48,9 +49,24 @@ function Payment() {
             }
         }).then(({ paymentIntent }) => {
             //paymentIntent is how stripe confirms payment
+            db
+              .collection('users')
+              .doc(user?.uid)
+              .collection('orders')
+              .doc(paymentIntent.id)
+              .set({
+                  cart: cart,
+                  amount: paymentIntent.amount,
+                  created: paymentIntent.created
+              })
+
             setSucceeded(true);
             setError(null);
             setProcessing(false);
+            
+            dispatch({
+                type: 'EMPTY_CART'
+            })
 
             navigate('../orders')
         })
