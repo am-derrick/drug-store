@@ -24,6 +24,7 @@ function Payment() {
     const [clientSecret, setClientSecret] = useState(true);
 
     useEffect(() => {
+        // gets secret required for Stripe payment
         const getClientSecret = async () => {
             const response = await axios({
                 method: 'post',
@@ -75,7 +76,7 @@ function Payment() {
     const handleChange = event => {
         // Listens for event changes and handles errors
         setDisabled(event.empty);
-        setError(event.error ? event.error.message :'');
+        setError(event.error ? event.error.message : '');
     }
 
   return (
@@ -99,7 +100,7 @@ function Payment() {
                 <div className='payment__title'>
                     <h3>Confirm your cart and address</h3>
                 </div>
-                <div className='payment__title'>
+                <div className='payment__items'>
                     {cart.map(item => (
                         <CheckoutDrug
                             id={item.id}
@@ -134,6 +135,7 @@ function Payment() {
                             </button>
                         </div>
 
+                        {error && <div>{error}</div>}
                     </form>
                 </div>
             </div>
