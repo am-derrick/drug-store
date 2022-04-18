@@ -91,6 +91,7 @@ function Payment() {
                     <h3>Delivery Address</h3>
                 </div>
                 <div className='payment__address'>
+                    <p>{user?.email}</p>
                     <p>553 Buruburu Phase 3</p>
                     <p>Nairobi, KE</p>
                 </div>
