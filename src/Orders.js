@@ -9,7 +9,7 @@ function Orders() {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-      if(user) {
+    if(user) {
         db
         .collection('users')
         .doc(user?.uid)
@@ -21,23 +21,24 @@ function Orders() {
                 data: doc.data()
             })))
         ))
-      } else {
-          setOrders([])
-      }
+    } else {
+        setOrders([])
+    }
       
   }, [user])
 
-  return (
-    <div className='orders'>
-        <h1>Your Orders</h1>
+    return (
+        <div className='orders'>
+            <h1>Your Orders</h1>
 
-        <div className='orders__order'>
-            {orders?.map(order => {
-                <Order order={order} />
-            })}
+            <div className='orders__order'>
+                {orders?.map(order => {
+                    <Order order={order} />
+                })}
+            </div>
         </div>
-    </div>
-  )
+    )
 }
+            
 
 export default Orders;
