@@ -3,8 +3,7 @@ const express = require('express');
 const cors = require('cors');
 const { request } = require("express");
 const { response } = require("express");
-const stripe = require('stripe')
-('sk_test_51KdXbYKeW4rZEkPG0P198il493giGeqjCDRgQrk8mGwxsMd9feAlODUCgkA03KBWn4MwynFxa70V6kZUXiIjihtI00CSiSstuD')
+const stripe = require('stripe')('sk_test_51KdXbYKeW4rZEkPG0P198il493giGeqjCDRgQrk8mGwxsMd9feAlODUCgkA03KBWn4MwynFxa70V6kZUXiIjihtI00CSiSstuD');
 
 // API set up
 // App config
@@ -33,4 +32,4 @@ app.post('/payments/create', async (request, response) => {
 })
 
 // Listen command
-exports.api = functions.https.onRequest(app)
+exports.api = functions.https.onRequest(app);
