@@ -30,7 +30,7 @@ function Payment() {
                 method: 'post',
                 // multiply by 100 because Stripe accepts upto cents
                 url: `/payments/create?total=${getCartTotal(cart) * 100}`
-            })
+            });
             setClientSecret(response.data.clientSecret)
         }
 
@@ -69,7 +69,7 @@ function Payment() {
                 type: 'EMPTY_CART'
             })
 
-            navigate('../orders')
+            navigate('../orders') //history.replace('/orders')
         })
     }
 
@@ -99,7 +99,7 @@ function Payment() {
 
             <div className='payment__section'>
                 <div className='payment__title'>
-                    <h3>Confirm your cart and address</h3>
+                    <h3>Confirm details</h3>
                 </div>
                 <div className='payment__items'>
                     {cart.map(item => (
