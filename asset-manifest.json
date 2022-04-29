@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/drug-store/static/css/main.a2345198.css",
+    "main.js": "/drug-store/static/js/main.cfeee1d4.js",
+    "static/js/787.ff42b74f.chunk.js": "/drug-store/static/js/787.ff42b74f.chunk.js",
+    "index.html": "/drug-store/index.html",
+    "main.a2345198.css.map": "/drug-store/static/css/main.a2345198.css.map",
+    "main.cfeee1d4.js.map": "/drug-store/static/js/main.cfeee1d4.js.map",
+    "787.ff42b74f.chunk.js.map": "/drug-store/static/js/787.ff42b74f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a2345198.css",
+    "static/js/main.cfeee1d4.js"
+  ]
+}
