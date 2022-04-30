@@ -14,6 +14,9 @@ The author of this project is Derrick Ampire,
 
 ![Screenshot (159)](https://user-images.githubusercontent.com/65196859/159448935-8dfe142b-3fdc-4a88-8634-5f11c657f365.png)
 
+## Demo
+Watch full demo video [here](https://www.loom.com/share/6b8dbd63b0384a20b7f3da99d6abcc23)
+
 ## Installation
 
 To run this app without using your web browser, simply fork and download the files on your local machine or server, then install react. User `npx create-react-app` to create the app, and install the react router dom with `npm install react-router-dom`. 
