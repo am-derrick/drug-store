@@ -1,4 +1,4 @@
-# Zoe Drug Store
+# Zoe Drug Store 💊💉
 
 ![ZDS Logo with Bkgrnd](https://user-images.githubusercontent.com/65196859/158594785-fb4172a0-876f-429d-8610-32b5a3ec2eb9.png)
 
