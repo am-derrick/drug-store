@@ -43,7 +43,6 @@ To contribute to the project;
 - Push your branch to your fork on Github. From your fork open a pull request and target the project's `develop` branch if there is one, else go for `master`!
 - Once the pull request is approved and merged you can pull the changes to your local repo and delete your extra branch(es).
 
-## Related projects
 
 ## Licensing
 This project is licensed under the MIT License.
